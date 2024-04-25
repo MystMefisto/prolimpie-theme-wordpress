@@ -1,0 +1,450 @@
+/*
+    Theme Name: Prolimpie mexicana
+    Theme URI: 
+    Author: Mefisto Contreras
+    Author URI: https://www.twitter.com/MysticMefisto
+    Description: Theme designed for prolimpie Mexicana industrial chemistry
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags: interactive map, map, chems, chemistry
+    Text Domain: Prolimpie mexicana
+*/
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --primary-color: #00ADEE;
+    --second-color: #424580;
+    --background-color: #F0F0F0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+@media (max-width: 850px) {
+    .logo-footer{
+        width: 200px !important;
+    }
+
+    .logo{
+        margin: auto !important;
+        flex-basis: 0;
+        flex-grow: 0;
+        width: 27%;
+    }
+
+    .social-navbar{
+        justify-content: center;
+        display: none !important;
+    }
+
+    .about-us-img{
+        width: 200px;
+    }
+
+    .introduction-container{
+        font-size: 12px !important;
+        letter-spacing: 0px !important;
+        line-height: 122% !important;
+        margin: 0px 20px 7px 20px !important;
+        padding-top: 10px !important;
+    }
+
+    .container-contact-container{
+        clip-path: none !important;
+    }
+
+    .contact-container{
+        box-shadow: none !important;
+    }
+
+    .catalog-btn{
+        margin-right: 25px !important;
+        font-size: 10px !important;
+        height: 40px !important;
+        width: 22vw !important;
+        margin: auto !important;
+    }
+
+    .fa-bars:before, .fa-navicon:before {
+        font-size: .6em !important;
+        line-height: 2 !important;
+    }
+
+    .about-us-column:nth-child(2){
+        display: none;
+    }
+
+    .copyright{
+        display: none;
+    }
+
+    .about-us-container {
+        margin: 0px !important;
+        height: auto !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .about-us-column h2 {
+        text-align: center !important;
+    }
+
+    .card h3 {
+        width: 100% !important;
+    }
+
+    .card-info {
+        text-align: center !important;
+    }
+
+    .card {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 53px !important;
+    }
+
+    .card img {
+        height: auto !important;
+        width: 255px !important;
+        margin: auto !important;
+    }
+
+    .card p {
+        width: 100% !important;
+        text-align: justify !important;
+    }
+
+    .logo img{
+        width: 24vw !important;
+    }
+
+    .contact-container, .contact-section form {
+        background-color: transparent !important;
+    }
+
+}
+
+main{
+    background-color: var(--background-color);
+}
+
+.interactive-map-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.interactive-map-container img{
+    height: auto;
+}
+
+
+div, a, p {
+    font-family: "Azeret Mono", monospace;
+}
+ 
+a:link,a:visited,a:active {
+    text-decoration: none;
+    color:white;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.menu-container{
+    display: flex;
+}
+
+.menu-item, .catalog-btn{
+    text-transform: uppercase;
+}
+
+.menu-item{
+    font-size: 20px;
+}
+
+.menu-principal{
+    margin-left: auto;
+    margin-top: -22px;
+}
+
+.icon-contact-container {
+    display: flex;
+}
+
+.header-contact-container{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: transparent !important;
+}
+
+.catalog-btn{
+    color: var(--primary-color) !important;
+    align-content: center;
+    text-transform: uppercase;
+    background-color: white;
+    height: 65px;
+    width: 116px;
+    text-align: center;
+    border-radius: 7px;
+    margin: auto 0;
+    margin-left: auto;
+    margin-right: 68px;
+}
+
+.fa-phone::before {
+    line-height: 58px;
+    font-size: 2em;
+    margin-right: 10px;
+    margin-left: 33px;
+    align-self: center;
+    line-height: 2;
+}
+
+.logo{
+    flex-basis: 0;
+    margin: auto;
+    flex-grow: 1;
+}
+
+.container-contact-container{
+    flex-basis: 0;
+    display: flex;
+    flex-grow: 3;
+    margin-left: 35px;
+    background-color: var(--primary-color);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 5% 100%);
+}
+
+.contact-container{
+    color: white;
+    max-width: 80vw;
+    margin: auto;
+    background-color: var(--second-color);
+    padding-top: 35px;
+    box-shadow: 13px 7px 22px 3px #0000008c;
+}
+
+
+.copy-contact-container{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+.logo img{
+    height: auto;
+    margin: 22px;
+    width: 250px;
+}
+
+.fa-brands{
+    font-size: 25px;
+    color: white;
+    margin: 0 14px;
+}
+
+.social-navbar-footer .fa-brands{
+    line-height: 2;
+}
+
+.social-navbar{
+    background-color: var(--second-color);
+    display: flex;
+    padding: 11px 132px;
+}
+
+.copyright{
+    color: white;
+}
+
+.footer{
+    display: flex;
+}
+
+footer .icon-contact-container {
+    color: var(--second-color);
+    margin: auto;
+    padding-right: 51px;
+}
+
+footer .fa-phone::before {
+    line-height: 2.5 !important;
+}
+
+.about-us-container {
+    display: flex;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 97px;
+    height: auto;
+    width: 830px;
+    padding: 57px;
+    box-shadow: 13px 7px 22px 3px gray;
+}
+
+.card {
+    display: flex;
+}
+
+.card img {
+    height: 120px;
+    width: 129px;
+    margin: 20px;
+}
+
+.card h3 {
+    width: 202%;
+}
+
+.card p {
+    width: 241%;
+}
+
+img.about-us-img {
+    clip-path: polygon(26% 0, 70% 0, 70% 100%, 100% 100%, 37% 100%);
+    width: 799px;
+}
+
+.introduction-container{
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 5px;
+    line-height: 152%;
+    margin: 0 101px 50px 101px;
+    padding-top: 35px;
+    color: var(--second-color);
+}
+
+/* Menú burger */
+
+.menu-btn{
+    font-size: 62px;
+    margin: auto 35px;
+    color: white;
+}
+
+.contact-section {
+    background: #bdc3c7;
+    padding: 30px 0 50px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+  }
+
+  .contact-section,.form div{
+    font-family: "Azeret Mono", monospace !important;
+  }
+
+  .contact-section h3 {
+    margin: 0;
+    padding: 0;
+    margin-top: 36px !important;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    height: auto;
+    min-width: 80vw;
+    text-align: left;
+    padding: 10px 0;
+  }
+  .contact-section form .subject,
+  .contact-section form .content {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .contact-section form .subject label,
+  .contact-section form .content label {
+    display: block;
+    padding: 0;
+    align-self: flex-start;
+    margin: 0;
+    font-family: "Azeret Mono", monospace;
+  }
+  .contact-section form .id {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contact-section form .id .name,
+  .contact-section form .id .email,
+  .contact-section form .id .company,
+  .contact-section form .id .phone {
+    display: inline-block;
+    width: 45%;
+  }
+  .contact-section form .id .name label,
+  .contact-section form .id .email label,
+  .contact-section form .id .company label,
+  .contact-section form .id .phone label {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: "Azeret Mono", monospace;
+  }
+  .contact-section form .id .name input[name=email],
+  .contact-section form .id .name input[name=name],
+  .contact-section form .id .email input[name=email],
+  .contact-section form .id .email input[name=name],
+  .contact-section form .id .company input[name=company],
+  .contact-section form .id .phone input[name=phone]{
+    width: 100%;
+    height: 40px;
+  }
+  .contact-section form .subject {
+    height: 62px;
+  }
+  .contact-section form .subject input[name=subject] {
+    width: 100%;
+    height: 40px;
+  }
+  .contact-section form .content textarea {
+    width: 100%;
+    resize: none;
+  }
+  .contact-section form .content button {
+    background: #F0970A;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-family: "Azeret Mono", monospace;
+    margin: auto;
+    width: 215px;
+    height: 51px;
+    margin-top: 21px;
+    margin-bottom: 13px;
+  }
+
+  .contact-section form .content button:hover {
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+
+.content{
+    display: flex;
+    flex-direction: column;
+  }
+
+.map-mobile-size {
+    width: 100% !important;
+}
+
+.map-desktop-size {
+    width: 700px !important;
+}
